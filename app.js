@@ -6,14 +6,15 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-// var fillPostData = require('./routes/fillPostData');
+
+var fillPostData = require('./routes/fillPostData');
 
 var app = express();
 
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
-var mongoDB = '';
+var mongoDB = 'mongodb+srv://admin:test4321@cluster0-5uo4w.mongodb.net/test?retryWrites=true';
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));

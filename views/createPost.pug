@@ -1,0 +1,19 @@
+h1 Create an Post
+
+form(method='GET' action='/savePost')
+    p
+        label(for='userId') User ID:
+        input(type='text', id='userId', name='userId')
+
+    p
+        label(for='id') ID:
+        input(type='text', id='id', name='id')
+    p
+        label(for='title') Title:
+        input(type='text', id='title', name='title')
+    p
+        label(for='body') Body:
+        input(type='text', id='body', name='body')
+
+    br
+    button Submit

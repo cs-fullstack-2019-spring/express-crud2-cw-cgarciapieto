@@ -3,3 +3,8 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+
+  ul
+    each post in allPosts
+      p
+        li ID: #{post.id} Title: #{post.title}
