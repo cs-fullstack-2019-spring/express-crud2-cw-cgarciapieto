@@ -5,8 +5,6 @@ var PostCollection = require('../models/PostSchema');
 /* GET home page. */
 router.get('/', function(req, res, next) {
 
-
-
   // finds and puts the collection in a context to be rendered on th index page
   PostCollection.find({}, (errors, results)=>
   {

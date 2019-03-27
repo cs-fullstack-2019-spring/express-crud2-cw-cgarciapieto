@@ -50,3 +50,5 @@ res.render('[ PUG RESULTS PAGE]', { [VARIABLE FOR HTML] : [RESULTS VARIABLE] } )
 
 <strong>Make sure the data you are sending is an array for the pug code to work. Print your results before you send them to the pug page and check them in your console.</strong>
 
+<hr>
+1.5 points. The update function doesn't work correctly.
